@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formulário de Cadastro</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/_css/cadastro.css'>
+
+   
+</head>
+<body>
+    <a href="/_html/landingpage.html"><img id="logoInc" src="/_imagens/gremio_colorado.png"></a>
+
+    <h1>CADASTRO DE FUNCIONÁRIOS</h1>
+
+    <form action="/_html/confirma.html" id="formulario" class="coluna" method="get">
+        <div class="ladoe">
+    <label><b>Nome:</b></label><br>
+    <input type="text"  class="color" id="nome" required/>
+    <p></p><br>
+
+    <label for="email"><b>E-mail:</b></label><br>
+    <input type="email"  class="color" id="email" required/>
+    <p></p><br>
+
+    <label for="senha"><b>Senha:</b></label><br>
+    <input type="password"  class="color" id="senha" required/>
+    <p></p><br>
+
+    <label for="senhacof"><b>Confirme sua senha:</b></label><br>
+    <input type="password"  class="color" id="senhacof" required/>
+    <p></p><br>
+
+    <label for="telefone"><b>Telefone <i>(apenas números)</i>:</b></label><br>
+    <input type="text"  class="color" id="telefone" required/>
+    <p></p><br>
+
+    <label for="idade"><b>Idade:</b></label><br>
+    <input type="number"  class="color" id="idade" required/>
+    <p></p><br>
+
+    <label><b>Turma:</b></label><br>
+    <input type="text"  class="color" name="turma" required/> 
+    </div>
+
+    <!--<div id="direita">-->
+        <div class="ladod">
+            <img id="logo" src="/_imagens/gremio_colorado.png">
+            <p></p>
+            <p></p>
+    <label><b>Esporte favorito:</b></label><br>
+    <input type="text" id="esporte" class="color" name="esporte" required/>
+    <p></p><br>
+
+    <label><b>Gostaria de receber novidades?</b></label><br><br>
+    <b><input type="radio" id="yes" name="yes">SIM</b>
+    <b><input type="radio" id="yesno" name="yesno">NÃO</b>
+    <p></p><br>
+    <div id="botao">
+        <button id="botao1" onclick=" return validarFormulario()">Cadastrar</button>
+        <button id="botao2" type="submit" onclick="json()">Gerar Json</button>
+    </div>
+    </div>
+    </form>
+
+    <footer class="rodape">
+        <p>2023 TODOS OS DIREITOS RESERVADOS ®</p>
+    </footer>
+
+
+    <script src='/_javascript/cadastro.js'></script>
+
+    
+   
+</html>

@@ -1,0 +1,516 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(90deg, rgb(254, 105, 56), orange, #a9a238);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+    min-height: 100%;
+}
+
+h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#aviso{
+  margin-top: 100px;
+    text-align: center;
+    color: white;
+    width: 50%;
+    background-color: black;
+    border: 2px solid rgb(255, 255, 255);
+}
+#title{
+    color: #645419;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 0;
+    background-color: #CFB645;
+    padding: 25px;
+    font-weight: bold;
+}
+#logo{
+    text-align: center;
+}
+
+#logo img{
+    border-radius: 27%;
+    width: 200px;
+
+}
+
+.container{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+ 
+}
+
+.rodape{
+    background-color: #CFB645;
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+    margin-top: 2%;
+    color: #645419;
+    font-weight: bold;
+    position:absolute;
+    width: 100%;
+    bottom: 0;
+  }
+
+  #alinhar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #alinhar table{
+    font-size: 18px;
+    border: 3px solid black;
+  }
+
+  #logoInc{
+    position: absolute;
+    width: 70px;
+    margin-top: 8px;
+    margin-left: 30px;
+    border-radius: 27%;
+  }
+
+  @import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+
+* {
+  box-sizing:border-box;
+}
+
+
+.post-it {
+  width:250px;
+  height:240px;
+  position:relative;
+  background:rgb(255, 255, 0);
+  overflow:hidden;
+  margin:30px auto;
+  padding:20px;
+  border-radius:0 0 0 30px/45px;
+  box-shadow:
+    inset 0 -40px 40px rgba(0,0,0,0.2),
+    inset 0 25px 10px rgba(0,0,0,0.2),
+    0 5px 6px 5px rgba(0,0,0,0.2);
+  font-family: 'Permanent Marker', cursive;
+  line-height:1.7em;
+  font-size:19px;
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+
+  color:#000000;
+}
+
+.post-it li {
+  cursor:pointer;
+   list-style-type: none;
+}
+
+.post-it:before {
+  content:"";
+  display:block;
+  position:absolute;
+  width:20px;
+  height:25px;
+  background:rgb(255, 251, 0);
+  box-shadow:
+    3px -2px 10px rgba(0,0,0,0.2),
+    inset 15px -15px 15px rgba(0,0,0,0.3);
+  left:0;
+  bottom:0;
+  z-index:2;
+  transform:skewX(25deg);
+}
+
+.post-it:after {
+  content:"";
+  display:block;
+  position:absolute;
+  width:75%;
+  height:20px;
+  border-top:3px solid #000000;
+  border-radius: 50% ;
+  bottom:0px;
+  left:10%;
+}
+
+.done {
+  text-decoration:line-through;
+}
+
+#sticky {
+  font-size:25px;
+  position:relative;
+}
+
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+
+* {
+  box-sizing:border-box;
+}
+
+
+.post-it2 {
+  width:250px;
+  height:240px;
+  position:relative;
+  background:rgb(112, 212, 255);
+  overflow:hidden;
+  margin:30px auto;
+  padding:20px;
+  border-radius:0 0 0 30px/45px;
+  box-shadow:
+    inset 0 -40px 40px rgba(0,0,0,0.2),
+    inset 0 25px 10px rgba(0,0,0,0.2),
+    0 5px 6px 5px rgba(0,0,0,0.2);
+  font-family: 'Permanent Marker', cursive;
+  line-height:1.7em;
+  font-size:19px;
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+  color:#000000;
+}
+
+.post-it2 li {
+  cursor:pointer;
+   list-style-type: none;
+}
+
+.post-it2:before {
+  content:"";
+  display:block;
+  position:absolute;
+  width:20px;
+  height:25px;
+  background:rgb(112, 212, 255);
+  box-shadow:
+    3px -2px 10px rgba(0,0,0,0.2),
+    inset 15px -15px 15px rgba(0,0,0,0.3);
+  left:0;
+  bottom:0;
+  z-index:2;
+  transform:skewX(25deg);
+}
+
+.post-it2:after {
+  content:"";
+  display:block;
+  position:absolute;
+  width:75%;
+  height:20px;
+  border-top:3px solid #000000;
+  border-radius: 50% ;
+  bottom:0px;
+  left:10%;
+}
+
+.done {
+  text-decoration:line-through;
+}
+
+#sticky {
+  font-size:25px;
+  position:relative;
+}
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+
+* {
+  box-sizing:border-box;
+}
+
+
+.post-it3 {
+  width:250px;
+  height:240px;
+  position:relative;
+  background:rgb(112, 215, 103);
+  overflow:hidden;
+  margin:30px auto;
+  padding:20px;
+  border-radius:0 0 0 30px/45px;
+  box-shadow:
+    inset 0 -40px 40px rgba(0,0,0,0.2),
+    inset 0 25px 10px rgba(0,0,0,0.2),
+    0 5px 6px 5px rgba(0,0,0,0.2);
+  font-family: 'Permanent Marker', cursive;
+  line-height:1.7em;
+  font-size:19px;
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+
+  color:#000000;
+}
+
+.post-it3 li {
+  cursor:pointer;
+   list-style-type: none;
+}
+
+.post-it3:before {
+  content:"";
+  display:block;
+  position:absolute;
+  width:20px;
+  height:25px;
+  background:rgb(112, 215, 103);
+  box-shadow:
+    3px -2px 10px rgba(0,0,0,0.2),
+    inset 15px -15px 15px rgba(0,0,0,0.3);
+  left:0;
+  bottom:0;
+  z-index:2;
+  transform:skewX(25deg);
+}
+
+.post-it3:after {
+  content:"";
+  display:block;
+  position:absolute;
+  width:75%;
+  height:20px;
+  border-top:3px solid #000000;
+  border-radius: 50% ;
+  bottom:0px;
+  left:10%;
+}
+
+.done {
+  text-decoration:line-through;
+}
+
+#sticky {
+  font-size:25px;
+  position:relative;
+}
+
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+
+* {
+  box-sizing:border-box;
+}
+
+
+.post-it4 {
+  width:250px;
+  height:240px;
+  position:relative;
+  background:rgb(255, 255, 0);
+  overflow:hidden;
+  margin:30px auto;
+  padding:20px;
+  border-radius:0 0 0 30px/45px;
+  box-shadow:
+    inset 0 -40px 40px rgba(0,0,0,0.2),
+    inset 0 25px 10px rgba(0,0,0,0.2),
+    0 5px 6px 5px rgba(0,0,0,0.2);
+  font-family: 'Permanent Marker', cursive;
+  line-height:1.7em;
+  font-size:19px;
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+
+  color:#000000;
+}
+
+.post-it4 li {
+  cursor:pointer;
+   list-style-type: none;
+}
+
+.post-it4:before {
+  content:"";
+  display:block;
+  position:absolute;
+  width:20px;
+  height:25px;
+  background:rgb(255, 255, 0);
+  box-shadow:
+    3px -2px 10px rgba(0,0,0,0.2),
+    inset 15px -15px 15px rgba(0,0,0,0.3);
+  left:0;
+  bottom:0;
+  z-index:2;
+  transform:skewX(25deg);
+}
+
+.post-it4:after {
+  content:"";
+  display:block;
+  position:absolute;
+  width:75%;
+  height:20px;
+  border-top:3px solid #000000;
+  border-radius: 50% ;
+  bottom:0px;
+  left:10%;
+}
+
+.done {
+  text-decoration:line-through;
+}
+
+#sticky {
+  font-size:25px;
+  position:relative;
+}
+
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+
+* {
+  box-sizing:border-box;
+}
+
+
+.post-it5 {
+  width:250px;
+  height:240px;
+  position:relative;
+  background:rgb(112, 212, 255);
+  overflow:hidden;
+  margin:30px auto;
+  padding:20px;
+  border-radius:0 0 0 30px/45px;
+  box-shadow:
+    inset 0 -40px 40px rgba(0,0,0,0.2),
+    inset 0 25px 10px rgba(0,0,0,0.2),
+    0 5px 6px 5px rgba(0,0,0,0.2);
+  font-family: 'Permanent Marker', cursive;
+  line-height:1.7em;
+  font-size:19px;
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+  color:#000000;
+ 
+}
+
+.post-it5 li {
+  cursor:pointer;
+   list-style-type: none;
+}
+
+.post-it5:before {
+  content:"";
+  display:block;
+  position:absolute;
+  width:20px;
+  height:25px;
+  background:rgb(112, 212, 255);
+  box-shadow:
+    3px -2px 10px rgba(0,0,0,0.2),
+    inset 15px -15px 15px rgba(0,0,0,0.3);
+  left:0;
+  bottom:0;
+  z-index:2;
+  transform:skewX(25deg);
+}
+
+.post-it5:after {
+  content:"";
+  display:block;
+  position:absolute;
+  width:75%;
+  height:20px;
+  border-top:3px solid #000000;
+  border-radius: 50% ;
+  bottom:0px;
+  left:10%;
+}
+
+.done {
+  text-decoration:line-through;
+}
+
+#sticky {
+  font-size:25px;
+  position:relative;
+}
+
+
+
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+
+* {
+  box-sizing:border-box;
+}
+
+
+.post-it6 {
+  width:250px;
+  height:240px;
+  position:relative;
+  background:rgb(112, 215, 103);
+  overflow:hidden;
+  margin:30px auto;
+  padding:20px;
+  border-radius:0 0 0 30px/45px;
+  box-shadow:
+    inset 0 -40px 40px rgba(0,0,0,0.2),
+    inset 0 25px 10px rgba(0,0,0,0.2),
+    0 5px 6px 5px rgba(0,0,0,0.2);
+  font-family: 'Permanent Marker', cursive;
+  line-height:1.7em;
+  font-size:19px;
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+
+  color:#000000;
+ 
+}
+
+.post-it6 li {
+  cursor:pointer;
+   list-style-type: none;
+}
+
+.post-it6:before {
+  content:"";
+  display:block;
+  position:absolute;
+  width:20px;
+  height:25px;
+  background:rgb(112, 215, 103);
+  box-shadow:
+    3px -2px 10px rgba(0,0,0,0.2),
+    inset 15px -15px 15px rgba(0,0,0,0.3);
+  left:0;
+  bottom:0;
+  z-index:2;
+  transform:skewX(25deg);
+}
+
+.post-it6:after {
+  content:"";
+  display:block;
+  position:absolute;
+  width:75%;
+  height:20px;
+  border-top:3px solid #000000;
+  border-radius: 50% ;
+  bottom:0px;
+  left:10%;
+}
+
+.done {
+  text-decoration:line-through;
+}
+
+#sticky {
+  font-size:25px;
+  position:relative;
+}
